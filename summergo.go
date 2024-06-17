@@ -1,10 +1,9 @@
-package application
+package summergo_web
 
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/summer-gonner/summergo-web/controllers"
 
-	"github.com/summer-gonner/summergo-web/pkg"
 	"strconv"
 )
 
@@ -16,8 +15,8 @@ func registerRoutes(router *gin.Engine) {
 	baseController.AuthRoutes(router)
 }
 func SummerGo() {
-	init, error := pkg.ApplicationInit()
-	if error != nil {
+	init, err := ApplicationInit()
+	if err != nil {
 		return
 	}
 

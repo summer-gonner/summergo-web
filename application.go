@@ -1,4 +1,4 @@
-package pkg
+package summergo_web
 
 import (
 	"gopkg.in/yaml.v2"
@@ -13,11 +13,6 @@ type Application struct {
 		Port int    `yaml:"port"`
 		Name string `yaml:"name"`
 	} `yaml:"server"`
-	Summer struct {
-		Logging struct {
-			Enabled bool `yaml:"enabled"`
-		}
-	} `yaml:"summer"`
 }
 
 // LoadConfigFromDir 从指定文件夹及其子文件夹中加载配置信息
