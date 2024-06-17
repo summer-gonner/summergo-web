@@ -1,4 +1,4 @@
-package controllers
+package summergo_web
 
 import (
 	"github.com/gin-gonic/gin"

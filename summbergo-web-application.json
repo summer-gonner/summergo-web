@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "server": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "description": "The port of the  server"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the server"
+        }
+      },
+      "required": [
+        "port",
+        "name"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "server"
+  ],
+  "additionalProperties": true
+}

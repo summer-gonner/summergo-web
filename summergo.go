@@ -2,14 +2,12 @@ package summergo_web
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/summer-gonner/summergo-web/controllers"
-
 	"strconv"
 )
 
 // RegisterRoutes 注册所有路由
 func registerRoutes(router *gin.Engine) {
-	baseController := &controllers.BaseController{}
+	baseController := &BaseController{}
 
 	// 注册认证相关路由
 	baseController.AuthRoutes(router)
